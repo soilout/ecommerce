@@ -1,8 +1,8 @@
-import { MongoClient, ObjectId } from "mongodb"
-import config from '../config.js'
+import { /* MongoClient, */ ObjectId } from "mongodb"
+//import config from '../config.js'
+import { db } from "../db.js"
 
-
-let db
+/* let db
 
 try{
     console.log('----- Tratando conectarse -----')
@@ -13,7 +13,7 @@ try{
 }
 catch(error){
     console.log('error: ' + error)
-}
+} */
 
 
 const getProducto = async (req, res) => {
