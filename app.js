@@ -4,6 +4,7 @@ import config from './config.js'
 import cors from 'cors'
 import upload from './routes/upload.js'
 import user from './routes/usuarios.js'
+import carrito from './routes/carrito.js'
 
 
 const app = express()
@@ -19,6 +20,7 @@ app.use(express.urlencoded({extended:false}))
 app.use('/api/productos', router)
 app.use('/api/uploads', upload)
 app.use('/api/user', user)
+app.use('/api/carrito', carrito)
 
 
 const server = app.listen(app.get('port'), ()=>{

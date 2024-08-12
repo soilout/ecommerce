@@ -11,5 +11,5 @@ try{
     db = client.db(config.BASE)
 }
 catch(error){
-    console.log('error: ' + error)
+    console.log('error en db: ' + error)
 }
